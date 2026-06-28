@@ -4,8 +4,8 @@
   var PER_PAGE = 20;
 
   var SUBAREA_MAP = {
-    '/old-glenmore': 'north',
-    '/north-glenmore': 'south'
+    '/old-glenmore': 'glenmore',
+    '/north-glenmore': 'north-glenmore'
   };
 
   var _allListings = [];
@@ -104,8 +104,8 @@
       var baths = l.BathroomsTotalInteger || 0;
       if (baths < _filters.minBaths) return false;
       if (_filters.subarea !== 'all') {
-        var region = (l.CityRegion || '').toLowerCase();
-        if (!region.includes(_filters.subarea)) return false;
+        var region = (l.CityRegion || '').toLowerCase().trim();
+        if (region !== _filters.subarea) return false;
       }
       return true;
     });

@@ -111,13 +111,13 @@ module.exports = async (req, res) => {
   const filters = [
     "City eq 'Kelowna'",
     "StateOrProvince eq 'British Columbia'",
-    "(CityRegion eq 'Old Glenmore' or CityRegion eq 'North Glenmore')",
+    "(CityRegion eq 'Glenmore' or CityRegion eq 'North Glenmore')",
     "StandardStatus eq 'Active'"
   ];
 
-  if (subarea === 'north') {
-    filters.push("CityRegion eq 'Old Glenmore'");
-  } else if (subarea === 'south') {
+  if (subarea === 'glenmore') {
+    filters.push("CityRegion eq 'Glenmore'");
+  } else if (subarea === 'north-glenmore') {
     filters.push("CityRegion eq 'North Glenmore'");
   }
 
