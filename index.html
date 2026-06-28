@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glenmore Kelowna Real Estate | Homes For Sale | Mark Jontz & Associates</title>
+<meta name="description" content="Browse active MLS® listings in Glenmore, Kelowna. Old Glenmore, Lower Glenmore, Glenmore Highlands & North Glenmore — family homes, townhomes, condos and luxury estates. Mark Jontz & Associates.">
+<meta name="keywords" content="Glenmore Kelowna real estate, Glenmore homes for sale, Old Glenmore Kelowna, North Glenmore Kelowna, Glenmore Highlands Kelowna, Lower Glenmore, Wilden Kelowna, buy home Glenmore, sell home Glenmore, Mark Jontz REALTOR Kelowna, Okanagan Golf Club Kelowna, UBCO Kelowna real estate">
+<link rel="canonical" href="https://ownglenmore.com/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:title" content="Own Glenmore | Kelowna's Most Active Real Estate Neighbourhood">
+<meta property="og:description" content="Browse every property type in Glenmore Kelowna — homes, condos, townhomes, and investment properties. Mark Jontz & Associates, Glenmore's most active team.">
+<meta property="og:url" content="https://ownglenmore.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ownglenmore.com/images/hero-glenmore.jpg">
+<meta property="og:image:width" content="1038">
+<meta property="og:image:height" content="692">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Own Glenmore | Kelowna's Most Active Real Estate Neighbourhood">
+<meta name="twitter:description" content="Browse every property type in Glenmore Kelowna — homes, condos, townhomes, and investment properties. Mark Jontz & Associates, Glenmore's most active team.">
+<meta name="twitter:image" content="https://ownglenmore.com/images/hero-glenmore.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<script src="/schema.js" defer></script>
+<script src="/listings.js" defer></script>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">OWN<span>GLENMORE</span></a>
+  <div class="nav-links">
+    <a href="#neighbourhood">Neighbourhood</a>
+    <a href="/amenities">Amenities &amp; Schools</a>
+    <a href="#listings">Listings</a>
+    <a href="/team">Our Team</a>
+    <a href="/contact">Contact</a>
+    <a href="/blog">Blog</a>
+  <a href="/homesafe">Homesafe™</a>
+    <a href="#seller" class="nav-cta">Free Valuation</a>
+  </div>
+  <div class="nav-hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#neighbourhood" onclick="toggleMenu()">Neighbourhood</a>
+  <a href="/amenities" onclick="toggleMenu()">Amenities</a>
+  <a href="#listings" onclick="toggleMenu()">Listings</a>
+  <a href="/team">Our Team</a>
+  <a href="/contact">Contact</a>
+  <a href="/blog">Blog</a>
+  <a href="/homesafe">Homesafe™</a>
+  <a href="#seller" onclick="toggleMenu()">Free Valuation</a>
+</div>
+
+<!-- HERO -->
+<section class="hero hero-photo">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Glenmore · Kelowna, BC</div>
+    <h1>Kelowna's largest neighbourhood.<br><span>Your most experienced team.</span></h1>
+    <p>Mark Jontz &amp; Associates has sold more homes in Glenmore than the next 3 agents combined. Whether you're buying, selling, or investing — nobody knows this neighbourhood like we do.</p>
+    <div class="hero-actions">
+      <a href="#listings" class="btn-primary">Browse Listings</a>
+      <a href="#seller" class="btn-secondary">What's My Home Worth?</a>
+    </div>
+  </div>
+  <div class="hero-divider"></div>
+</section>
+
+<!-- AGENT BAR MOBILE -->
+<div class="agent-bar agent-bar-mobile">
+  <div class="agent-bar-inner">
+    <div style="display:flex;align-items:center;gap:16px">
+      <img src="/logos/mj-associates-dark.svg" alt="Mark Jontz &amp; Associates" class="logo-img" style="height:32px">
+      <div class="logo-divider-dark"></div>
+      <img src="/logos/rl-kelowna-dark.svg" alt="Royal LePage Kelowna" class="logo-img" style="height:32px">
+    </div>
+    <div class="agent-contacts">
+      <a href="tel:12508616002" class="agent-contact">📞 250-861-6002</a>
+      <a href="mailto:info@markjontz.com" class="agent-contact">✉️ info@markjontz.com</a>
+      <a href="/team" class="agent-contact">Meet the Team →</a>
+    </div>
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num">24,244</div><div class="stat-lbl">Glenmore Residents</div></div>
+  <div class="stat"><div class="stat-num" id="stat-listing-count">—</div><div class="stat-lbl">Active Glenmore Listings</div></div>
+  <div class="stat"><div class="stat-num">~$978K</div><div class="stat-lbl">Avg. Detached Home (2026)</div></div>
+  <div class="stat"><div class="stat-num">4</div><div class="stat-lbl">Distinct Sub-Areas</div></div>
+  <a href="/homesafe" class="stat" style="text-decoration:none;color:var(--white)"><div class="stat-num">Homesafe™</div><div class="stat-lbl">We Created the Program</div></a>
+</div>
+
+<!-- AGENT BAR DESKTOP -->
+<div class="agent-bar agent-bar-desktop">
+  <div class="agent-bar-inner">
+    <img src="/logos/mj-associates-dark.svg" alt="Mark Jontz &amp; Associates" class="logo-img" style="height:44px">
+    <div class="logo-divider-dark"></div>
+    <img src="/logos/rl-kelowna-dark.svg" alt="Royal LePage Kelowna" class="logo-img" style="height:44px">
+    <div style="flex:1"></div>
+    <div class="agent-contacts" style="margin-top:0">
+      <a href="tel:12508616002" class="agent-contact">📞 250-861-6002</a>
+      <a href="mailto:info@markjontz.com" class="agent-contact">✉️ info@markjontz.com</a>
+      <a href="/team" class="agent-contact">Meet the Team →</a>
+    </div>
+  </div>
+</div>
+
+<!-- NEIGHBOURHOOD OVERVIEW -->
+<div id="neighbourhood" class="section">
+  <div class="section-inner">
+    <div class="section-label">The Neighbourhood</div>
+    <h2 class="section-title">Glenmore, Kelowna</h2>
+    <p class="section-sub">Originally "Dry Valley" — too arid for farming when the rest of the Okanagan was already settled — Glenmore was transformed after the Glenmore Irrigation District planted 100,000 fruit trees in 1912. Today it's home to 24,244 residents across four distinct sub-areas, stretching from established character homes near downtown all the way to master-planned communities, lakeshore estates, and active orchards in the north. It's Kelowna's most diverse neighbourhood by housing type, lifestyle, and price point.</p>
+
+    <div class="subarea-grid" style="grid-template-columns:repeat(2,1fr)">
+      <a href="/old-glenmore" class="subarea-card">
+        <div class="subarea-photo" style="background-image:url('/images/hero-glenmore.jpg');background-size:cover;background-position:center"></div>
+        <div class="subarea-body">
+          <div class="subarea-label">Sub-Area</div>
+          <div class="subarea-name">Old Glenmore</div>
+          <p class="subarea-desc">Situated north of Bankhead and east of Kelowna North. Established character homes on larger lots, mature landscaping, and heritage properties — including the Ireland Farm House (1919). Minutes from downtown, close to Knox Mountain trails.</p>
+          <span class="subarea-link">Explore Old Glenmore →</span>
+        </div>
+      </a>
+      <a href="/lower-glenmore" class="subarea-card">
+        <div class="subarea-photo" style="background-image:url('/images/hero-glenmore.jpg');background-size:cover;background-position:center 30%"></div>
+        <div class="subarea-body">
+          <div class="subarea-label">Sub-Area</div>
+          <div class="subarea-name">Lower Glenmore</div>
+          <p class="subarea-desc">The commercial heart of the valley. A blend of older suburban streets and modern multi-family development — condos, townhomes, and retirement communities. Glenmore Landing shopping, transit connections, and Brandt's Creek Linear Park all here.</p>
+          <span class="subarea-link">Explore Lower Glenmore →</span>
+        </div>
+      </a>
+      <a href="/glenmore-highlands" class="subarea-card">
+        <div class="subarea-photo" style="background-image:url('/images/hero-glenmore.jpg');background-size:cover;background-position:center 60%"></div>
+        <div class="subarea-body">
+          <div class="subarea-label">Sub-Area</div>
+          <div class="subarea-name">Glenmore Highlands</div>
+          <p class="subarea-desc">On the western slope of the valley — hillside homes with panoramic views, Magic Estates, and Highpointe luxury gated community. Construction ran primarily through the 1990s–2000s. Knox Mountain Park access from the top.</p>
+          <span class="subarea-link">Explore Glenmore Highlands →</span>
+        </div>
+      </a>
+      <a href="/north-glenmore" class="subarea-card">
+        <div class="subarea-photo" style="background-image:url('/images/hero-glenmore.jpg');background-size:cover;background-position:center 80%"></div>
+        <div class="subarea-body">
+          <div class="subarea-label">Sub-Area</div>
+          <div class="subarea-name">North Glenmore</div>
+          <p class="subarea-desc">Kelowna's northern growth frontier — active orchards, farmlands, lakeshore estates, and master-planned communities including Wilden. Okanagan Golf Club (36 holes), UBCO minutes away via John Hindle Drive. Spectacular valley views at higher elevation.</p>
+          <span class="subarea-link">Explore North Glenmore →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- WHY GLENMORE -->
+<div class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">Why Glenmore</div>
+    <h2 class="section-title">The case for buying in Glenmore</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🌳</div>
+        <div class="why-title">Orchard Roots, Modern Growth</div>
+        <p class="why-desc">Glenmore's agricultural history gives it a character no other Kelowna neighbourhood has. Active orchards and farmlands still dot North Glenmore alongside master-planned communities — a rare blend of Okanagan heritage and new development.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⛳</div>
+        <div class="why-title">Okanagan Golf Club</div>
+        <p class="why-desc">A 36-hole facility in your backyard — the Nicklaus-designed Bear Course and the Les Furber Quail Course. One of the premier golf destinations in Western Canada, minutes from your front door.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🎓</div>
+        <div class="why-title">UBCO at Your Doorstep</div>
+        <p class="why-desc">UBC Okanagan is 10 minutes away via John Hindle Drive (opened 2018). Strong rental demand from students and faculty, plus proximity to Kelowna International Airport makes North Glenmore a natural investment corridor.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏔️</div>
+        <div class="why-title">Trails From Every Angle</div>
+        <p class="why-desc">Knox Mountain Park, Dilworth Mountain Park, Stephens Coyote Ridge (102 hectares), Glenmore Ridge Trail, Brandt's Creek Linear Park, Blair Pond Park — and the Okanagan Rail Trail running all the way to Lake Country and Vernon.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏗️</div>
+        <div class="why-title">Kelowna's Biggest Growth Story</div>
+        <p class="why-desc">The North Glenmore Sector Study (2026) identifies 4,000 acres for future growth — the population could double to 35,000. Wilden's Phase 3 (1,000 homes), Burtch Road Extension, and the $251M Parkinson Recreation Centre rebuild are all underway.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏫</div>
+        <div class="why-title">Schools Built for the Future</div>
+        <p class="why-desc">Five existing schools including French Immersion and Montessori options. A $101M Burtch Road Middle School (800 seats) is approved and funded. A 1,500-seat Glenmore Secondary School is in the OCP. The educational infrastructure is being built ahead of the growth.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCHOOLS -->
+<div id="schools" class="section">
+  <div class="section-inner">
+    <div class="section-label">Education</div>
+    <h2 class="section-title">Schools in Glenmore</h2>
+    <p class="section-sub">Glenmore is served by School District 23 with five schools currently operating and three major new schools approved or in planning — built ahead of the growth.</p>
+    <div class="schools-grid">
+      <div class="school-card">
+        <div class="school-level">Elementary · K–6</div>
+        <div class="school-name">North Glenmore Elementary</div>
+        <p class="school-desc">Community-focused school known for its arts and nature programs. Serves the North Glenmore corridor.</p>
+      </div>
+      <div class="school-card">
+        <div class="school-level">Elementary · K–6</div>
+        <div class="school-name">Watson Road Elementary</div>
+        <p class="school-desc">Inclusive school recognized for its academics and supportive environment. Central Glenmore location.</p>
+      </div>
+      <div class="school-card">
+        <div class="school-level">Elementary · K–6 · French Immersion</div>
+        <div class="school-name">École Glenmore Elementary</div>
+        <p class="school-desc">Offers a full French Immersion curriculum — one of the few immersion options on this side of Kelowna.</p>
+      </div>
+      <div class="school-card">
+        <div class="school-level">Private · All Ages</div>
+        <div class="school-name">Coronation Montessori</div>
+        <p class="school-desc">Private Montessori school emphasizing individualized learning. One of Kelowna's most established alternative education options.</p>
+      </div>
+      <div class="school-card">
+        <div class="school-level">Middle School · Gr. 7–9</div>
+        <div class="school-name">École Dr. Knox Middle School</div>
+        <p class="school-desc">Full range of academic programs and extracurricular activities. Feeds from all three Glenmore elementaries.</p>
+      </div>
+    </div>
+    <div style="margin-top:28px;padding:20px 24px;background:var(--off-white);border:1.5px solid var(--border);border-left:4px solid var(--red);border-radius:var(--r)">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--red);margin-bottom:8px">Coming Soon</div>
+      <p style="font-size:14px;color:var(--charcoal);line-height:1.75;margin:0"><strong>Burtch Road Middle School</strong> — $101M approved project adding 800 student seats. <strong>Glenmore Secondary School</strong> — 1,500-seat campus-style school in the OCP, integrated with the Parkinson Recreation Centre expansion. <strong>New Wilden Elementary</strong> — proposed to serve the growing Wilden community.</p>
+    </div>
+  </div>
+</div>
+
+<!-- NEW DEVELOPMENTS -->
+<div class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">New Construction</div>
+    <h2 class="section-title">New developments in Glenmore</h2>
+    <p class="section-sub">Glenmore has more active development than any other Kelowna neighbourhood. Here's what's selling and what's coming.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🏘️</div>
+        <div class="why-title">Wilden — Phase 3</div>
+        <p class="why-desc">BC's largest master-planned community. 1,800 homes completed of a planned 2,800. Phase 3 envisions 1,000 more homes across 578 acres (227 protected). Development projected to begin ~2030. OCP and zoning amendments in progress now.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏠</div>
+        <div class="why-title">Antler Heights at Wilden</div>
+        <p class="why-desc">Now selling — semi-detached walkout rancher duplexes ranging from 1,953 to 2,791 sq ft. Pricing from $1,229,900 + GST. Curated collections within the Wilden community.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏙️</div>
+        <div class="why-title">GlenPark Row I &amp; II</div>
+        <p class="why-desc">52 + 77 modern townhomes in North Glenmore. Three-level homes with 3–4 bedrooms, den, double garages, and private patios. 1,440–1,715 sq ft. GlenPark Row II from the high $600,000s.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏗️</div>
+        <div class="why-title">Trellis — 720 Valley Road</div>
+        <p class="why-desc">49 contemporary townhomes with 3–4 bedrooms, up to 2,363 sq ft. Currently selling from approximately $769,900 to $959,900. One of the most competitively priced new townhome projects in Glenmore.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏢</div>
+        <div class="why-title">Wilden Market Square</div>
+        <p class="why-desc">Proposed 6-storey mid-rise at 1521 Union Road featuring condos and townhomes. Plans include daycare, health services, and ground-floor retail — effectively a new town centre for the Wilden community.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌟</div>
+        <div class="why-title">Highpointe</div>
+        <p class="why-desc">Luxury gated community offering multi-million dollar estates with panoramic views overlooking the Glenmore Valley. For buyers looking at the top end of the Kelowna market in a private, established setting.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RECENT SOLDS -->
+<div id="solds" class="section section-alt">
+  <div class="section-inner">
+    <div class="section-label">Track Record</div>
+    <h2 class="section-title">Recently sold in Glenmore</h2>
+    <p class="section-sub">Mark Jontz &amp; Associates has sold more in Glenmore than the next 3 agents combined. A sample of recent transactions.</p>
+    <div class="solds-grid">
+      <div class="sold-card" style="background-image:url('/images/solds/680-richards.jpg')">
+        <div class="sold-card-overlay">
+          <div>
+            <div style="font-size:13px;font-weight:800;color:#fff;margin-bottom:4px">680 Richards Rd, Kelowna</div>
+            <div style="font-size:11px;color:rgba(255,255,255,.75);margin-bottom:8px">Listed at $1,089,000 · House</div>
+            <div class="sold-badge">Sold</div>
+          </div>
+        </div>
+      </div>
+      <div class="sold-card" style="background-image:url('/images/solds/532-okeefe.jpg')">
+        <div class="sold-card-overlay">
+          <div>
+            <div style="font-size:13px;font-weight:800;color:#fff;margin-bottom:4px">532 O'Keefe Crt, Kelowna</div>
+            <div style="font-size:11px;color:rgba(255,255,255,.75);margin-bottom:8px">Listed at $824,800 · House</div>
+            <div class="sold-badge">Sold</div>
+          </div>
+        </div>
+      </div>
+      <div class="sold-card" style="background-image:url('/images/solds/1396-tower-ranch.jpg')">
+        <div class="sold-card-overlay">
+          <div>
+            <div style="font-size:13px;font-weight:800;color:#fff;margin-bottom:4px">1396 Tower Ranch Dr, Kelowna</div>
+            <div style="font-size:11px;color:rgba(255,255,255,.75);margin-bottom:8px">Listed at $779,000 · House</div>
+            <div class="sold-badge">Sold</div>
+          </div>
+        </div>
+      </div>
+      <div class="sold-card" style="background-image:url('/images/solds/835-kitch.jpg')">
+        <div class="sold-card-overlay">
+          <div>
+            <div style="font-size:13px;font-weight:800;color:#fff;margin-bottom:4px">835 Kitch Rd, Kelowna</div>
+            <div style="font-size:11px;color:rgba(255,255,255,.75);margin-bottom:8px">Listed at $749,800 · House</div>
+            <div class="sold-badge">Sold</div>
+          </div>
+        </div>
+      </div>
+      <div class="sold-card" style="background-image:url('/images/solds/1040-cactus.jpg')">
+        <div class="sold-card-overlay">
+          <div>
+            <div style="font-size:13px;font-weight:800;color:#fff;margin-bottom:4px">1040 Cactus Rd, Kelowna</div>
+            <div style="font-size:11px;color:rgba(255,255,255,.75);margin-bottom:8px">Listed at $699,900 · House</div>
+            <div class="sold-badge">Sold</div>
+          </div>
+        </div>
+      </div>
+      <div class="sold-card" style="background-image:url('/images/solds/1150-graf.jpg')">
+        <div class="sold-card-overlay">
+          <div>
+            <div style="font-size:13px;font-weight:800;color:#fff;margin-bottom:4px">1150 Graf Rd, Kelowna</div>
+            <div style="font-size:11px;color:rgba(255,255,255,.75);margin-bottom:8px">Listed at $674,800 · House</div>
+            <div class="sold-badge">Sold</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:20px;text-align:center">Sold prices not disclosed in accordance with CREA rules.</p>
+  </div>
+</div>
+
+<div id="listings" class="section">
+  <div class="section-inner">
+    <div class="section-label">MLS® Listings</div>
+    <h2 class="section-title">Active listings in Glenmore</h2>
+    <p class="section-sub">Live data from MLS®. Updated daily.</p>
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterType(this,'all')">All</button>
+      <button class="filter-btn" onclick="filterType(this,'House')">Houses</button>
+      <button class="filter-btn" onclick="filterType(this,'Row')">Townhomes</button>
+      <button class="filter-btn" onclick="filterType(this,'Apartment')">Condos</button>
+      <button class="filter-btn" onclick="filterType(this,'Manufactured')">Mobile Homes</button>
+      <select class="filter-select" onchange="filterPrice(this)" id="price-filter">
+        <option value="">Any Price</option>
+        <option value="0-400000">Under $400K</option>
+        <option value="400000-600000">$400K – $600K</option>
+        <option value="600000-800000">$600K – $800K</option>
+        <option value="800000-1000000">$800K – $1M</option>
+        <option value="1000000-1200000">$1M – $1.2M</option>
+        <option value="1200000-1500000">$1.2M – $1.5M</option>
+        <option value="1500000-99999999">$1.5M+</option>
+      </select>
+      <select class="filter-select" onchange="filterBeds(this)" id="beds-filter">
+        <option value="0">Any Beds</option>
+        <option value="1">1+ Beds</option>
+        <option value="2">2+ Beds</option>
+        <option value="3">3+ Beds</option>
+        <option value="4">4+ Beds</option>
+      </select>
+      <select class="filter-select" onchange="filterBaths(this)" id="baths-filter">
+        <option value="0">Any Baths</option>
+        <option value="1">1+ Baths</option>
+        <option value="2">2+ Baths</option>
+        <option value="3">3+ Baths</option>
+      </select>
+      <select class="filter-select" onchange="filterSubarea(this)" id="subarea-filter">
+        <option value="">All of Glenmore</option>
+        <option value="old glenmore">Old Glenmore</option>
+        <option value="lower glenmore">Lower Glenmore</option>
+        <option value="glenmore highlands">Glenmore Highlands</option>
+        <option value="north glenmore">North Glenmore</option>
+      </select>
+    </div>
+    <div class="buildings-grid" id="listings-container">
+      <div style="grid-column:1/-1;text-align:center;padding:48px 0;color:var(--muted);font-size:14px">Loading listings...</div>
+    </div>
+    <div id="listings-pagination"></div>
+    <div class="listings-disclaimer" id="listings-disclaimer" style="display:none"></div>
+  </div>
+</div>
+
+<!-- SELLER / BUYER FORMS -->
+<div class="lead-section" id="seller">
+  <div class="lead-inner">
+
+    <div class="lead-box">
+      <div class="lead-eyebrow">Free &amp; No Obligation</div>
+      <h2 class="lead-title">What's your home worth?</h2>
+      <p class="lead-sub">With more Glenmore transactions than any other team in Kelowna, we know exactly what your property is worth. Honest number, no pressure.</p>
+      <div data-fs-success class="lead-success">✓ Got it — we'll be in touch within one business day.</div>
+      <div data-fs-error class="lead-form-error">Something went wrong. Please call us at <a href="tel:12508616002">250-861-6002</a>.</div>
+      <form id="seller-form" class="lead-form">
+        <input type="hidden" name="form_source" value="ownglenmore.com — seller valuation">
+        <div class="lead-row">
+          <div class="lead-field">
+            <label for="s-name">Your Name</label>
+            <input type="text" id="s-name" name="name" placeholder="Jane Smith" required data-fs-field>
+            <span data-fs-error="name" class="lead-field-error"></span>
+          </div>
+          <div class="lead-field">
+            <label for="s-phone">Phone</label>
+            <input type="tel" id="s-phone" name="phone" placeholder="250-555-0100" data-fs-field>
+          </div>
+        </div>
+        <div class="lead-field">
+          <label for="s-email">Email</label>
+          <input type="email" id="s-email" name="email" placeholder="jane@email.com" required data-fs-field>
+          <span data-fs-error="email" class="lead-field-error"></span>
+        </div>
+        <div class="lead-field">
+          <label for="s-address">Property Address</label>
+          <input type="text" id="s-address" name="address" placeholder="123 Glenmore Rd N, Kelowna" data-fs-field>
+        </div>
+        <div class="lead-field">
+          <label for="s-message">Anything else? <span>(optional)</span></label>
+          <textarea id="s-message" name="message" rows="3" placeholder="Timeframe, recent updates, questions..." data-fs-field></textarea>
+        </div>
+        <button type="submit" class="lead-submit" data-fs-submit-btn>Get My Free Valuation →</button>
+      </form>
+    </div>
+
+    <div class="lead-box">
+      <div class="lead-eyebrow">Thinking About Buying?</div>
+      <h2 class="lead-title">Find your place in Glenmore</h2>
+      <p class="lead-sub">First-time buyer, growing family, or investor after Kelowna's best value — we know every street and will find you the right fit at the right price.</p>
+      <div data-fs-success class="lead-success">✓ Got it — we'll be in touch within one business day.</div>
+      <div data-fs-error class="lead-form-error">Something went wrong. Please call us at <a href="tel:12508616002">250-861-6002</a>.</div>
+      <form id="buyer-form" class="lead-form">
+        <input type="hidden" name="form_source" value="ownglenmore.com — buyer inquiry">
+        <div class="lead-row">
+          <div class="lead-field">
+            <label for="b-name">Your Name</label>
+            <input type="text" id="b-name" name="name" placeholder="Jane Smith" required data-fs-field>
+            <span data-fs-error="name" class="lead-field-error"></span>
+          </div>
+          <div class="lead-field">
+            <label for="b-phone">Phone</label>
+            <input type="tel" id="b-phone" name="phone" placeholder="250-555-0100" data-fs-field>
+          </div>
+        </div>
+        <div class="lead-field">
+          <label for="b-email">Email</label>
+          <input type="email" id="b-email" name="email" placeholder="jane@email.com" required data-fs-field>
+          <span data-fs-error="email" class="lead-field-error"></span>
+        </div>
+        <div class="lead-row">
+          <div class="lead-field">
+            <label for="b-budget">Budget</label>
+            <select id="b-budget" name="budget" data-fs-field>
+              <option value="" disabled selected>Select range</option>
+              <option>Under $500,000</option>
+              <option>$500,000 – $700,000</option>
+              <option>$700,000 – $1,000,000</option>
+              <option>$1,000,000+</option>
+            </select>
+          </div>
+          <div class="lead-field">
+            <label for="b-type">Property Type</label>
+            <select id="b-type" name="property_type" data-fs-field>
+              <option value="" disabled selected>Select type</option>
+              <option>House</option>
+              <option>Townhome</option>
+              <option>Condo / Apartment</option>
+              <option>Mobile Home</option>
+              <option>Any</option>
+            </select>
+          </div>
+        </div>
+        <div class="lead-field">
+          <label for="b-message">What are you looking for? <span>(optional)</span></label>
+          <textarea id="b-message" name="message" rows="3" placeholder="Timeline, must-haves, questions..." data-fs-field></textarea>
+        </div>
+        <button type="submit" class="lead-submit" data-fs-submit-btn>Send Inquiry →</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- TEAM TEASER -->
+<div class="section">
+  <div class="section-inner" style="text-align:center">
+    <div class="section-label">The Team</div>
+    <h2 class="section-title">Glenmore's most active agents</h2>
+    <p class="section-sub">More Glenmore transactions than the next 3 agents combined — under the Royal LePage banner.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;max-width:700px;margin:0 auto">
+      <div style="background:var(--white);border:1.5px solid var(--border);border-top:4px solid var(--red);border-radius:var(--r);padding:28px">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--red-dark),var(--red));display:flex;align-items:center;justify-content:center;color:var(--white);font-size:20px;font-weight:900;margin-bottom:16px">MJ</div>
+        <div style="font-size:18px;font-weight:900;color:var(--charcoal);margin-bottom:4px">Mark Jontz</div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--red);margin-bottom:12px">Team Lead · REALTOR®</div>
+        <p style="font-size:14px;color:var(--muted);line-height:1.7">Since 1999, Mark Jontz has been one of the top-producing agents in the BC Okanagan. Chairman's Club Lifetime Member, Chairman's Hall of Fame inductee (first in brokerage history), 5,000+ home evaluations, and 3,000+ transactions.</p>
+      </div>
+      <div style="background:var(--white);border:1.5px solid var(--border);border-top:4px solid var(--red);border-radius:var(--r);padding:28px">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--red-dark),var(--red));display:flex;align-items:center;justify-content:center;color:var(--white);font-size:20px;font-weight:900;margin-bottom:16px">MG</div>
+        <div style="font-size:18px;font-weight:900;color:var(--charcoal);margin-bottom:4px">Michael Greenwood</div>
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--red);margin-bottom:12px">REALTOR®</div>
+        <p style="font-size:14px;color:var(--muted);line-height:1.7">Michael brings a tradesman's eye to real estate — years in the trades, now applied to evaluating construction quality and investment properties. Active investor himself, working with buyers across the Kelowna market.</p>
+      </div>
+    </div>
+    <div style="margin-top:24px"><a href="/team" class="btn-red">Meet the Full Team →</a></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">OWN<span>GLENMORE</span></div>
+      <p class="footer-desc">Glenmore's dedicated real estate resource. Powered by Mark Jontz &amp; Associates at Royal LePage Kelowna.</p>
+    </div>
+    <div>
+      <div class="footer-heading">Sub-Areas</div>
+      <ul class="footer-links">
+        <li><a href="/old-glenmore">Old Glenmore</a></li>
+        <li><a href="/lower-glenmore">Lower Glenmore</a></li>
+        <li><a href="/glenmore-highlands">Glenmore Highlands</a></li>
+        <li><a href="/north-glenmore">North Glenmore</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Navigate</div>
+      <ul class="footer-links">
+        <li><a href="#listings">Active Listings</a></li>
+        <li><a href="#solds">Recent Solds</a></li>
+        <li><a href="/homesafe">Homesafe™ Program</a></li>
+        <li><a href="/team">Our Team</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:12508616002">250-861-6002</a></li>
+        <li><a href="mailto:info@markjontz.com">info@markjontz.com</a></li>
+      </ul>
+      <div style="margin-top:16px">
+        <img src="/logos/rl-kelowna-dark.svg" alt="Royal LePage Kelowna" style="height:36px;width:auto;opacity:.7">
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Mark Jontz &amp; Associates | Royal LePage Kelowna. All rights reserved.</p>
+    <p style="margin-top:6px">The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA.</p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  var m = document.getElementById('mobile-menu');
+  m.style.display = m.style.display === 'flex' ? 'none' : 'flex';
+}
+window.formspree = window.formspree || function(){ (formspree.q = formspree.q || []).push(arguments); };
+formspree('initForm', { formElement: '#seller-form', formId: 'xdarzzal' });
+formspree('initForm', { formElement: '#buyer-form',  formId: 'xdarzzal' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glenmore Kelowna Amenities | Parks, Shopping, Recreation & Community | OwnGlenmore.com</title>
+<meta name="description" content="Everything in Glenmore, Kelowna — grocery stores, parks, recreation centres, faith communities, medical services, and more. Your complete neighbourhood guide from Mark Jontz & Associates.">
+<link rel="canonical" href="https://ownglenmore.com/amenities">
+<meta property="og:title" content="Amenities &amp; Schools in Glenmore Kelowna | OwnGlenmore">
+<meta property="og:description" content="Everything in Glenmore, Kelowna — grocery stores, parks, recreation centres, schools, and more. Your complete neighbourhood guide from Mark Jontz &amp; Associates.">
+<meta property="og:url" content="https://ownglenmore.com/amenities">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ownglenmore.com/images/hero-glenmore.jpg">
+<meta property="og:image:width" content="1038">
+<meta property="og:image:height" content="692">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Amenities &amp; Schools in Glenmore Kelowna | OwnGlenmore">
+<meta name="twitter:description" content="Everything in Glenmore, Kelowna — grocery stores, parks, recreation centres, schools, and more. Your complete neighbourhood guide from Mark Jontz &amp; Associates.">
+<meta name="twitter:image" content="https://ownglenmore.com/images/hero-glenmore.jpg">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<script src="/schema.js" defer></script>
+<style>
+.jump-nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 32px;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;position:sticky;top:66px;z-index:90}
+.jump-nav-inner{max-width:1100px;margin:0 auto;display:flex;gap:0}
+.jump-link{display:inline-flex;align-items:center;gap:7px;padding:14px 20px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;transition:color .2s,border-color .2s;white-space:nowrap;flex-shrink:0}
+.jump-link:hover{color:var(--red);border-color:var(--red)}
+.jump-link .ji{font-size:14px}
+
+.amenity-section{padding:72px 32px}
+.amenity-section-alt{background:var(--off-white);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.amenity-section-inner{max-width:1100px;margin:0 auto}
+
+.place-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px;margin-top:28px}
+.place-card{background:var(--white);border:1.5px solid var(--border);border-left:4px solid var(--red);border-radius:var(--r);padding:20px 22px;transition:box-shadow .2s,transform .2s}
+.place-card:hover{box-shadow:0 4px 18px rgba(0,0,0,.07);transform:translateY(-2px)}
+.place-name{font-size:15px;font-weight:800;color:var(--charcoal);margin-bottom:5px;line-height:1.3}
+.place-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--red);background:rgba(140,26,28,.08);padding:2px 8px;border-radius:2px;margin-bottom:9px}
+.place-desc{font-size:13px;color:var(--muted);line-height:1.7}
+
+.cat-header{display:flex;align-items:center;gap:18px;margin-bottom:6px}
+.cat-icon{font-size:36px;line-height:1;flex-shrink:0}
+.cat-title-group{}
+.cat-overline{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--red);margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.cat-overline::before{content:'';width:20px;height:2px;background:var(--red);display:inline-block}
+.cat-title{font-size:clamp(20px,2.5vw,28px);font-weight:900;color:var(--charcoal);letter-spacing:-.3px}
+
+.info-strip{background:var(--charcoal);color:rgba(255,255,255,.75);padding:18px 32px;font-size:13px;text-align:center;line-height:1.6}
+.info-strip a{color:rgba(255,255,255,.9);font-weight:700;text-decoration:none}
+.info-strip a:hover{text-decoration:underline}
+
+@media(max-width:768px){
+  .amenity-section{padding:52px 20px}
+  .place-grid{grid-template-columns:1fr}
+  .jump-link{padding:12px 14px;font-size:11px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">OWN<span>GLENMORE</span></a>
+  <div class="nav-links">
+    <a href="/#neighbourhood">Neighbourhood</a>
+    <a href="/amenities" class="active">Amenities</a>
+    <a href="/#listings">Listings</a>
+    <a href="/team">Our Team</a>
+    <a href="/contact">Contact</a>
+    <a href="/blog">Blog</a>
+  <a href="/homesafe">Homesafe™</a>
+    <a href="/#seller" class="nav-cta">Free Valuation</a>
+  </div>
+  <div class="nav-hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/#neighbourhood" onclick="toggleMenu()">Neighbourhood</a>
+  <a href="/amenities" onclick="toggleMenu()">Amenities</a>
+  <a href="/#listings" onclick="toggleMenu()">Listings</a>
+  <a href="/team">Our Team</a>
+  <a href="/contact">Contact</a>
+  <a href="/blog">Blog</a>
+  <a href="/homesafe">Homesafe™</a>
+  <a href="/#seller" onclick="toggleMenu()">Free Valuation</a>
+</div>
+
+<div class="page-header">
+  <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,.6);margin-bottom:10px">
+    <a href="/" style="color:rgba(255,255,255,.6);text-decoration:none">Glenmore</a> · Neighbourhood Guide
+  </div>
+  <h1 style="font-size:clamp(28px,4vw,44px);font-weight:900;color:var(--white);margin-bottom:12px">Amenities &amp; Lifestyle</h1>
+  <p style="font-size:16px;color:rgba(255,255,255,.78);max-width:640px;line-height:1.6">Glenmore has more amenities per square kilometre than almost anywhere else in Kelowna — groceries, parks, recreation, faith communities, and everything in between, all without leaving the neighbourhood.</p>
+</div>
+
+<!-- JUMP NAV -->
+<nav class="jump-nav" aria-label="Amenity categories">
+  <div class="jump-nav-inner">
+    <a href="#grocery" class="jump-link"><span class="ji">🛒</span> Grocery</a>
+    <a href="#shopping" class="jump-link"><span class="ji">🛍️</span> Shopping</a>
+    <a href="#parks" class="jump-link"><span class="ji">🌿</span> Parks &amp; Trails</a>
+    <a href="#recreation" class="jump-link"><span class="ji">🏒</span> Recreation</a>
+    <a href="#faith" class="jump-link"><span class="ji">⛪</span> Faith &amp; Community</a>
+    <a href="#health" class="jump-link"><span class="ji">🏥</span> Health</a>
+    <a href="#transit" class="jump-link"><span class="ji">🚌</span> Getting Around</a>
+  </div>
+</nav>
+
+<!-- GROCERY -->
+<div id="grocery" class="amenity-section">
+  <div class="amenity-section-inner">
+    <div class="cat-header">
+      <div class="cat-icon">🛒</div>
+      <div class="cat-title-group">
+        <div class="cat-overline">Grocery &amp; Daily Needs</div>
+        <div class="cat-title">Everything on one run</div>
+      </div>
+    </div>
+    <p style="font-size:15px;color:var(--muted);max-width:640px;line-height:1.75;margin-top:10px">Glenmore's grocery options cover every budget and cuisine preference. Major chains, budget stores, and a strong selection of ethnic grocers reflecting the neighbourhood's diverse community.</p>
+    <div class="place-grid">
+      <div class="place-card">
+        <div class="place-name">Save-On-Foods</div>
+        <div class="place-tag">Full Service Grocery</div>
+        <p class="place-desc">Premium grocery with an in-store pharmacy, deli, bakery, and floral department. One of the best-stocked stores in the Glenmore corridor.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">South Asian &amp; Ethnic Grocers</div>
+        <div class="place-tag">Specialty Grocery</div>
+        <p class="place-desc">Glenmore's large South Asian and Filipino communities are served by several specialty grocers stocking imported staples, spices, and fresh produce you won't find at the chains.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Shoppers Drug Mart</div>
+        <div class="place-tag">Pharmacy + Convenience</div>
+        <p class="place-desc">Full pharmacy, convenience grocery, beauty, and health products. Convenient for top-ups between bigger shops.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Pharmasave</div>
+        <div class="place-tag">Pharmacy</div>
+        <p class="place-desc">Local independent pharmacy with personalized service. Good alternative to chain pharmacies for prescriptions and OTC medications.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SHOPPING -->
+<div id="shopping" class="amenity-section amenity-section-alt">
+  <div class="amenity-section-inner">
+    <div class="cat-header">
+      <div class="cat-icon">🛍️</div>
+      <div class="cat-title-group">
+        <div class="cat-overline">Shopping &amp; Retail</div>
+        <div class="cat-title">Highway 33 has it covered</div>
+      </div>
+    </div>
+    <p style="font-size:15px;color:var(--muted);max-width:640px;line-height:1.75;margin-top:10px">The Highway 33 corridor is lined with retail, services, and strip malls — from big-box stores to local shops. Most errands can be done without leaving the neighbourhood.</p>
+    <div class="place-grid">
+      <div class="place-card">
+        <div class="place-name">Highway 33 Corridor</div>
+        <div class="place-tag">Main Retail Strip</div>
+        <p class="place-desc">The main commercial artery of Old Glenmore — lined with restaurants, service businesses, banks, and retail from one end to the other. Costco and Walmart are a 10-minute drive away.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Home Hardware</div>
+        <div class="place-tag">Hardware &amp; Home</div>
+        <p class="place-desc">Full hardware, tools, paint, and home improvement supplies. Locally owned and well-stocked — no drive across town needed for your weekend project.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Dollarama</div>
+        <div class="place-tag">Discount Retail</div>
+        <p class="place-desc">Household goods, cleaning products, party supplies, and seasonal items at dollar-store prices. Practical and convenient for everyday needs.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Banks &amp; Credit Unions</div>
+        <div class="place-tag">Financial Services</div>
+        <p class="place-desc">Multiple major banks and credit unions on the Hwy 33 strip — TD, RBC, Interior Savings, and others within minutes of any Glenmore address.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Restaurants &amp; Fast Food</div>
+        <div class="place-tag">Dining</div>
+        <p class="place-desc">A wide range of dining options along Hwy 33 — from national chains (McDonald's, Tim Hortons, A&amp;W) to local Indian, Filipino, and Canadian restaurants.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Orchard Park Mall</div>
+        <div class="place-tag">Shopping Mall · Nearby</div>
+        <p class="place-desc">Kelowna's main shopping mall is 10 minutes from Glenmore — anchored by the Bay and Sporting Life, with 150+ stores, a food court, and a cinema.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PARKS & TRAILS -->
+<div id="parks" class="amenity-section">
+  <div class="amenity-section-inner">
+    <div class="cat-header">
+      <div class="cat-icon">🌿</div>
+      <div class="cat-title-group">
+        <div class="cat-overline">Parks &amp; Trails</div>
+        <div class="cat-title">Greenspace at your door</div>
+      </div>
+    </div>
+    <p style="font-size:15px;color:var(--muted);max-width:640px;line-height:1.75;margin-top:10px">North Glenmore, in particular, is defined by its proximity to Kelowna's best urban greenspace. You don't need to drive to find a trail or a park — it's already in the neighbourhood.</p>
+    <div class="place-grid">
+      <div class="place-card">
+        <div class="place-name">Mission Creek Greenway</div>
+        <div class="place-tag">Trail System · North Glenmore</div>
+        <p class="place-desc">One of Kelowna's most beloved trail systems follows Mission Creek along Glenmore's western edge. Paved and unpaved paths for walking, running, and cycling — extending all the way to Lakeshore Road and Lake Okanagan.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Ben Lee Park</div>
+        <div class="place-tag">Recreation Park · North Glenmore</div>
+        <p class="place-desc">Glenmore's flagship park — a full recreation destination with a skate park, outdoor water park, BMX track, sports fields, and a summer concession stand. Families spend entire days here.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Glenmore Lions Park</div>
+        <div class="place-tag">Neighbourhood Park</div>
+        <p class="place-desc">A well-maintained community park with playgrounds, picnic areas, and open green space. Popular with young families in the surrounding streets.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Bellevue Creek Greenway</div>
+        <div class="place-tag">Trail · Natural Area</div>
+        <p class="place-desc">A quieter natural trail system connecting through south Kelowna — wooded, natural, and popular with dog walkers and trail runners.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Gallagher's Canyon</div>
+        <div class="place-tag">Golf &amp; Scenery · Nearby</div>
+        <p class="place-desc">One of BC's most scenic golf courses sits just southeast of Glenmore — with canyon views and Okanagan landscape that's hard to match. A short drive from any Glenmore address.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Neighbourhood Pocket Parks</div>
+        <div class="place-tag">Local Parks</div>
+        <p class="place-desc">Glenmore is scattered with smaller neighbourhood parks — playgrounds, benches, and green strips tucked into residential streets throughout both North and South sub-areas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RECREATION -->
+<div id="recreation" class="amenity-section amenity-section-alt">
+  <div class="amenity-section-inner">
+    <div class="cat-header">
+      <div class="cat-icon">🏒</div>
+      <div class="cat-title-group">
+        <div class="cat-overline">Recreation &amp; Sports</div>
+        <div class="cat-title">Stay active, stay close</div>
+      </div>
+    </div>
+    <p style="font-size:15px;color:var(--muted);max-width:640px;line-height:1.75;margin-top:10px">From the YMCA to community arenas, Glenmore has serious recreational infrastructure — and Big White Ski Resort is 45 minutes straight up Highway 33.</p>
+    <div class="place-grid">
+      <div class="place-card">
+        <div class="place-name">YMCA Kelowna</div>
+        <div class="place-tag">Fitness &amp; Recreation</div>
+        <p class="place-desc">Full-service YMCA on the Hwy 33 corridor — gym, fitness classes, swimming pool, and youth programs. One of the best community fitness facilities in the Okanagan.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Glenmore Arena</div>
+        <div class="place-tag">Arena &amp; Events</div>
+        <p class="place-desc">Glenmore's own community arena — home to minor hockey, public skating, and local events. Right in the neighbourhood, no drive required.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Glenmore Centennial Hall</div>
+        <div class="place-tag">Community Hall</div>
+        <p class="place-desc">Glenmore's own community hall hosts local events, meetings, youth programs, and community gatherings year-round.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Ben Lee Park Skate Park</div>
+        <div class="place-tag">Skateboarding · Free</div>
+        <p class="place-desc">A proper skate park inside Ben Lee Park — concrete bowls and street features that draw skaters from across Kelowna. Open and free year-round.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Ben Lee Park Water Park</div>
+        <div class="place-tag">Outdoor Water Play · Seasonal</div>
+        <p class="place-desc">A free outdoor spray and water play park operating through the summer months. Hands-down one of the most popular spots for families with young kids in all of Kelowna.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Big White Ski Resort</div>
+        <div class="place-tag">Skiing &amp; Snowboarding · 45 min</div>
+        <p class="place-desc">Highway 33 runs straight to Big White — Kelowna's home ski mountain and one of BC's top resorts. 45 minutes from Glenmore, no connecting highway required.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAITH & COMMUNITY -->
+<div id="faith" class="amenity-section">
+  <div class="amenity-section-inner">
+    <div class="cat-header">
+      <div class="cat-icon">⛪</div>
+      <div class="cat-title-group">
+        <div class="cat-overline">Faith &amp; Community</div>
+        <div class="cat-title">A neighbourhood of neighbours</div>
+      </div>
+    </div>
+    <p style="font-size:15px;color:var(--muted);max-width:640px;line-height:1.75;margin-top:10px">Glenmore is one of Kelowna's most culturally diverse neighbourhoods — home to a wide range of faith communities, cultural organizations, and community gathering spaces.</p>
+    <div class="place-grid">
+      <div class="place-card">
+        <div class="place-name">Gurdwara Sahib Kelowna</div>
+        <div class="place-tag">Sikh Temple</div>
+        <p class="place-desc">Serving Glenmore's large and longstanding Punjabi-Sikh community — one of the largest Gurdwaras in the Okanagan, with regular services, langar (community kitchen), and cultural programs.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Glenmore United Church</div>
+        <div class="place-tag">Christian · United</div>
+        <p class="place-desc">An established congregation in the heart of Glenmore — welcoming, community-focused, and active in local outreach and programming.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">St. Theresa Catholic Parish</div>
+        <div class="place-tag">Christian · Catholic</div>
+        <p class="place-desc">Catholic parish serving the Glenmore community with regular masses, sacraments, youth groups, and faith formation programs.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Evangelical &amp; Baptist Churches</div>
+        <div class="place-tag">Christian · Various</div>
+        <p class="place-desc">Several evangelical and Baptist congregations operate in Glenmore, including Grace Baptist and others — offering a range of worship styles and community programming.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Muslim Community (Masjid)</div>
+        <div class="place-tag">Islamic</div>
+        <p class="place-desc">Glenmore's growing Muslim community is served by mosque facilities in the broader Kelowna area — reflecting the neighbourhood's continued cultural growth and diversity.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Cultural &amp; Community Societies</div>
+        <div class="place-tag">Cultural Organizations</div>
+        <p class="place-desc">Various cultural associations — Filipino, South Asian, and others — hold events, festivals, and community gatherings in and around Glenmore throughout the year.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEALTH -->
+<div id="health" class="amenity-section amenity-section-alt">
+  <div class="amenity-section-inner">
+    <div class="cat-header">
+      <div class="cat-icon">🏥</div>
+      <div class="cat-title-group">
+        <div class="cat-overline">Health &amp; Medical</div>
+        <div class="cat-title">Clinics, dentists, and specialists</div>
+      </div>
+    </div>
+    <p style="font-size:15px;color:var(--muted);max-width:640px;line-height:1.75;margin-top:10px">Glenmore's Highway 33 corridor is lined with medical and dental offices, walk-in clinics, and pharmacies. Kelowna General Hospital is 10 minutes away.</p>
+    <div class="place-grid">
+      <div class="place-card">
+        <div class="place-name">Walk-In Clinics</div>
+        <div class="place-tag">Primary Care · No Appointment</div>
+        <p class="place-desc">Multiple walk-in medical clinics operate along the Hwy 33 strip — accessible without an appointment for non-emergency care, prescriptions, and referrals.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Kelowna General Hospital</div>
+        <div class="place-tag">Hospital · ~10 min</div>
+        <p class="place-desc">Kelowna's main hospital is approximately 10 minutes from Glenmore — a full-service hospital with emergency, surgical, and specialist services.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Dental Offices</div>
+        <div class="place-tag">Dentistry</div>
+        <p class="place-desc">Several dental clinics operate within Glenmore, offering general dentistry, orthodontics, and hygiene services — most with flexible appointment hours.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Physiotherapy &amp; Chiro</div>
+        <div class="place-tag">Allied Health</div>
+        <p class="place-desc">Physiotherapy, chiropractic, and massage therapy clinics are scattered throughout Glenmore — convenient for athletes, tradespeople, and anyone managing chronic pain or injury recovery.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Optometrists</div>
+        <div class="place-tag">Eye Care</div>
+        <p class="place-desc">Eye clinics and optometrists on the Hwy 33 corridor offering exams, prescriptions, and glasses — including options with walk-in availability for urgent concerns.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Veterinary Clinics</div>
+        <div class="place-tag">Pet Care</div>
+        <p class="place-desc">Glenmore has veterinary clinics serving the neighbourhood's many pet-owning families — routine care, vaccinations, and emergency referrals available locally.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GETTING AROUND -->
+<div id="transit" class="amenity-section">
+  <div class="amenity-section-inner">
+    <div class="cat-header">
+      <div class="cat-icon">🚌</div>
+      <div class="cat-title-group">
+        <div class="cat-overline">Getting Around</div>
+        <div class="cat-title">Well connected in every direction</div>
+      </div>
+    </div>
+    <p style="font-size:15px;color:var(--muted);max-width:640px;line-height:1.75;margin-top:10px">Glenmore sits at Kelowna's geographic centre — well-served by transit, close to the highway network, and within 15 minutes of just about everything in the city.</p>
+    <div class="place-grid">
+      <div class="place-card">
+        <div class="place-name">BC Transit — Hwy 33 Routes</div>
+        <div class="place-tag">Public Transit</div>
+        <p class="place-desc">Multiple BC Transit routes run the length of Highway 33 connecting Glenmore to downtown Kelowna, Orchard Park, UBCO, and other key destinations. Frequent service during peak hours.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Highway 33</div>
+        <div class="place-tag">Main Arterial Road</div>
+        <p class="place-desc">The spine of Glenmore — connecting north to Hwy 97 and the rest of Kelowna, and southeast directly to Big White Ski Resort (45 min). Fast access to everything.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Kelowna International Airport (YLW)</div>
+        <div class="place-tag">Airport · ~10–15 min</div>
+        <p class="place-desc">YLW is one of Canada's fastest-growing airports and is a short drive from Glenmore — direct flights to Vancouver, Calgary, Toronto, Seattle, and seasonal routes.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">UBCO Campus</div>
+        <div class="place-tag">University · ~10 min</div>
+        <p class="place-desc">UBC Okanagan's main campus is 10–15 minutes north of Glenmore via Hwy 97. A strong driver of rental demand for investors in the Glenmore market.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Downtown Kelowna</div>
+        <div class="place-tag">City Centre · ~15 min</div>
+        <p class="place-desc">Glenmore is roughly 15 minutes from downtown Kelowna by car — the waterfront, Prospera Place, restaurants, and the city's main business district are all within easy reach.</p>
+      </div>
+      <div class="place-card">
+        <div class="place-name">Big White Ski Resort</div>
+        <div class="place-tag">Mountain Access · 45 min</div>
+        <p class="place-desc">Glenmore's biggest geographic advantage — Highway 33 runs straight up the mountain. No ferry, no connecting highway, no detours. Just 45 minutes from your driveway to the chairlift.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA STRIP -->
+<div style="background:var(--charcoal);color:var(--white);padding:56px 32px;text-align:center">
+  <div style="max-width:600px;margin:0 auto">
+    <div style="font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.4);margin-bottom:12px">Ready to buy in Glenmore?</div>
+    <h2 style="font-size:clamp(22px,3vw,32px);font-weight:900;margin-bottom:14px;letter-spacing:-.3px">We have sold more homes in Glenmore<br>than the next 3 agents combined.</h2>
+    <p style="font-size:15px;color:rgba(255,255,255,.65);margin-bottom:28px;line-height:1.7">Whether you're relocating, upgrading, or investing — nobody knows this neighbourhood like we do. Browse active listings or call us directly.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="/#listings" class="btn-primary" style="background:var(--white);color:var(--red)">Browse Listings</a>
+      <a href="/contact" class="btn-secondary">Contact the Team</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">OWN<span>GLENMORE</span></div>
+      <p class="footer-desc">Glenmore's dedicated real estate resource. Powered by Mark Jontz &amp; Associates at Royal LePage Kelowna.</p>
+    </div>
+    <div>
+      <div class="footer-heading">Sub-Areas</div>
+      <ul class="footer-links">
+        <li><a href="/old-glenmore">Old Glenmore</a></li>
+        <li><a href="/north-glenmore">North Glenmore</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Navigate</div>
+      <ul class="footer-links">
+        <li><a href="/#listings">All Listings</a></li>
+        <li><a href="/#solds">Recent Solds</a></li>
+        <li><a href="/amenities">Amenities &amp; Schools</a></li>
+        <li><a href="/team">Our Team</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:12508616002">250-861-6002</a></li>
+        <li><a href="mailto:info@markjontz.com">info@markjontz.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Mark Jontz &amp; Associates | Royal LePage Kelowna. All rights reserved.</p>
+    <p style="margin-top:6px">The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA.</p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  var m = document.getElementById('mobile-menu');
+  m.style.display = m.style.display === 'flex' ? 'none' : 'flex';
+}
+</script>
+</body>
+</html>
