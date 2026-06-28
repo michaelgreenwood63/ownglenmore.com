@@ -145,12 +145,11 @@ module.exports = async (req, res) => {
     const uniqueKeys = [...new Set(listings.map(l => l.ListOfficeKey).filter(Boolean))];
     const officeMap  = await fetchOfficeNames(token, uniqueKeys);
 
-    // Filter to residential only — exclude commercial/industrial/agriculture
-    const residentialTypes = new Set(['Single Family', 'Multi-family', 'Other']);
-    const residentialStructures = new Set(['House', 'Apartment', 'Row / Townhouse', 'Manufactured Home', 'Duplex', 'Fourplex', 'Multi-Family']);
+    // Exclude known commercial/industrial/agricultural types; pass everything else
+    const excludedStructures = new Set(['Office', 'Retail', 'Industrial', 'Agricultural', 'Hotel/Motel', 'Parking']);
     const filtered = listings.filter(l => {
-      const struct = Array.isArray(l.StructureType) ? l.StructureType[0] : l.StructureType;
-      return residentialStructures.has(struct) || residentialTypes.has(l.PropertySubType);
+      const struct = (Array.isArray(l.StructureType) ? l.StructureType[0] : l.StructureType) || '';
+      return !excludedStructures.has(struct);
     });
 
     // Merge OfficeName onto each listing and normalise ListingURL
