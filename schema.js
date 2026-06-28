@@ -107,7 +107,7 @@
           'name': 'Why choose Mark Jontz & Associates in Glenmore?',
           'acceptedAnswer': {
             '@type': 'Answer',
-            'text': 'Mark Jontz & Associates sell more homes in Glenmore than the next 3 agents combined. With over 25 years of Kelowna real estate experience, 5,000+ home evaluations, and 3,000+ transactions, our team has unmatched market knowledge and a proven track record in this neighbourhood.'
+            'text': 'Mark Jontz & Associates brings 25+ years of Kelowna real estate experience, 5,000+ home evaluations, and 3,000+ transactions to Glenmore. Our team has the market knowledge and track record to get you the right outcome.'
           }
         }
       ]
