@@ -1,0 +1,81 @@
+<svg width="680" height="320" viewBox="0 0 680 320" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>North Glenmore Kelowna</title>
+  <desc>Stylized cover banner for North Glenmore, Kelowna</desc>
+  <defs><clipPath id="cNG"><rect width="680" height="320" rx="12"/></clipPath></defs>
+  <g clip-path="url(#cNG)">
+    <rect width="680" height="320" fill="#6AB0D8"/>
+    <rect width="680" height="200" fill="#5299C4"/>
+    <rect width="680" height="130" fill="#3E82B0"/>
+    <rect width="680" height="80" fill="#2C6D9A"/>
+    <circle cx="580" cy="65" r="36" fill="#FFF0A0" opacity="0.95"/>
+    <circle cx="580" cy="65" r="27" fill="#FFF8C0"/>
+    <polygon points="0,170 90,85 180,135 260,70 340,118 420,62 510,105 600,58 680,95 680,195 0,195" fill="#C8D8E8"/>
+    <polygon points="250,70 260,50 270,70" fill="#FFFFFF" opacity="0.9"/>
+    <polygon points="410,62 420,42 430,62" fill="#FFFFFF" opacity="0.9"/>
+    <polygon points="590,58 600,38 610,58" fill="#FFFFFF" opacity="0.9"/>
+    <polygon points="80,85 90,65 100,85" fill="#FFFFFF" opacity="0.85"/>
+    <polygon points="0,210 55,160 125,190 205,145 285,178 365,130 445,165 530,118 610,152 680,132 680,230 0,230" fill="#5E8C6A"/>
+    <polygon points="0,235 680,235 680,260 0,260" fill="#4A7A55"/>
+    <polygon points="20,258 28,232 36,258" fill="#3A6040"/>
+    <polygon points="50,260 59,230 68,260" fill="#3A6040"/>
+    <polygon points="85,256 94,228 103,256" fill="#3A6040"/>
+    <polygon points="310,258 319,229 328,258" fill="#3A6040"/>
+    <polygon points="345,260 355,227 365,260" fill="#3A6040"/>
+    <polygon points="610,257 620,228 630,257" fill="#3A6040"/>
+    <polygon points="648,260 658,230 668,260" fill="#3A6040"/>
+    <rect y="255" width="680" height="65" fill="#7AB870"/>
+    <rect x="0" y="263" width="680" height="16" fill="#A0A0A0"/>
+    <rect x="50" y="269" width="35" height="2" fill="#F0F0F0" opacity="0.7"/>
+    <rect x="145" y="269" width="35" height="2" fill="#F0F0F0" opacity="0.7"/>
+    <rect x="240" y="269" width="35" height="2" fill="#F0F0F0" opacity="0.7"/>
+    <rect x="335" y="269" width="35" height="2" fill="#F0F0F0" opacity="0.7"/>
+    <rect x="430" y="269" width="35" height="2" fill="#F0F0F0" opacity="0.7"/>
+    <rect x="525" y="269" width="35" height="2" fill="#F0F0F0" opacity="0.7"/>
+    <rect x="620" y="269" width="35" height="2" fill="#F0F0F0" opacity="0.7"/>
+    <rect x="40" y="215" width="80" height="50" fill="#EDE0CC"/>
+    <rect x="40" y="230" width="80" height="5" fill="#D4C4A0"/>
+    <polygon points="28,215 80,182 132,215" fill="#8B2018"/>
+    <rect x="69" y="233" width="22" height="32" fill="#5A3A1A"/>
+    <rect x="44" y="220" width="18" height="14" fill="#AED6F1"/>
+    <rect x="98" y="220" width="18" height="14" fill="#AED6F1"/>
+    <rect x="120" y="230" width="30" height="35" fill="#DDD0B8"/>
+    <rect x="122" y="232" width="26" height="22" fill="#C8BAA0"/>
+    <rect x="185" y="218" width="75" height="47" fill="#F0E2C8"/>
+    <polygon points="173,218 223,184 273,218" fill="#A0241A"/>
+    <rect x="212" y="236" width="20" height="29" fill="#6A3C18"/>
+    <rect x="189" y="224" width="16" height="13" fill="#AED6F1"/>
+    <rect x="244" y="224" width="15" height="12" fill="#AED6F1"/>
+    <rect x="258" y="228" width="25" height="37" fill="#E0D2B8"/>
+    <rect x="260" y="230" width="21" height="20" fill="#CAC0A0"/>
+    <rect x="320" y="210" width="95" height="55" fill="#EAD8B8"/>
+    <rect x="320" y="225" width="95" height="5" fill="#D0BC98"/>
+    <polygon points="305,210 368,172 430,210" fill="#922018"/>
+    <rect x="356" y="230" width="24" height="35" fill="#5A3010"/>
+    <rect x="325" y="217" width="20" height="16" fill="#AED6F1"/>
+    <rect x="390" y="217" width="20" height="16" fill="#AED6F1"/>
+    <rect x="415" y="222" width="32" height="43" fill="#DDD0B4"/>
+    <rect x="417" y="224" width="28" height="24" fill="#C8BAA0"/>
+    <rect x="468" y="220" width="70" height="45" fill="#EDE0C8"/>
+    <polygon points="456,220 503,186 550,220" fill="#8A1E14"/>
+    <rect x="492" y="238" width="20" height="27" fill="#623A18"/>
+    <rect x="470" y="226" width="16" height="13" fill="#AED6F1"/>
+    <rect x="526" y="226" width="15" height="12" fill="#AED6F1"/>
+    <rect x="575" y="218" width="72" height="47" fill="#F0E4CC"/>
+    <polygon points="563,218 611,183 659,218" fill="#9E2218"/>
+    <rect x="600" y="237" width="21" height="28" fill="#623A18"/>
+    <rect x="578" y="225" width="17" height="13" fill="#AED6F1"/>
+    <rect x="637" y="225" width="16" height="12" fill="#AED6F1"/>
+    <rect x="155" y="238" width="5" height="22" fill="#8B6914"/>
+    <ellipse cx="157" cy="232" rx="14" ry="18" fill="#3A6828"/>
+    <rect x="286" y="240" width="5" height="20" fill="#7A5C14"/>
+    <ellipse cx="288" cy="234" rx="13" ry="16" fill="#3A6828"/>
+    <rect x="453" y="238" width="5" height="22" fill="#8B6914"/>
+    <ellipse cx="455" cy="232" rx="14" ry="18" fill="#426030"/>
+    <rect x="555" y="240" width="5" height="20" fill="#8B6914"/>
+    <ellipse cx="557" cy="234" rx="13" ry="16" fill="#3A6828"/>
+    <rect x="0" y="0" width="680" height="320" fill="#0A2040" opacity="0.38" rx="12"/>
+    <text x="52" y="128" font-family="sans-serif" font-size="46" font-weight="700" fill="#FFFFFF" letter-spacing="1">NORTH GLENMORE</text>
+    <text x="53" y="163" font-family="sans-serif" font-size="20" font-weight="400" fill="#D8EAF8" letter-spacing="3">KELOWNA, BRITISH COLUMBIA</text>
+    <rect x="52" y="173" width="80" height="3" fill="#7EC8F0" rx="2"/>
+  </g>
+</svg>
