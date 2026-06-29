@@ -175,7 +175,7 @@
       'url':           BASE + path,
       'datePublished': post.datePublished,
       'dateModified':  post.dateModified,
-      'image':         BASE + '/images/hero-glenmore.png',
+      'image':         BASE + '/images/hero-glenmore.jpg',
       'author': {
         '@type': 'Organization',
         'name':  'Mark Jontz & Associates',
@@ -184,7 +184,7 @@
       'publisher': {
         '@type': 'Organization',
         'name':  'Mark Jontz & Associates',
-        'logo':  { '@type': 'ImageObject', 'url': BASE + '/images/hero-glenmore.png' }
+        'logo':  { '@type': 'ImageObject', 'url': BASE + '/images/hero-glenmore.jpg' }
       },
       'mainEntityOfPage': { '@type': 'WebPage', '@id': BASE + path }
     });

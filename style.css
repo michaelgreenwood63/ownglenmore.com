@@ -453,6 +453,7 @@ details[open] .faq-q::after{transform:translateY(-50%) rotate(45deg)}
 .article-cta-box{background:var(--red);border-radius:var(--r);padding:36px;margin-top:48px;text-align:center}
 .article-cta-box .cta-title{font-size:20px;font-weight:900;color:var(--white);margin-bottom:10px}
 .article-cta-box p{color:rgba(255,255,255,.75);font-size:14px;margin-bottom:20px;line-height:1.7}
+.article-related{background:var(--off-white);border-radius:var(--r);padding:24px 28px;margin:40px 0 0}.article-related-title{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:14px}.article-related-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}.article-related-list a{color:var(--red);font-weight:600;font-size:14px;text-decoration:none}.article-related-list a:hover{text-decoration:underline}
 .btn-cta-primary{background:var(--white);color:var(--red)!important;padding:12px 24px;border-radius:4px;font-weight:700;font-size:13px;text-decoration:none!important;display:inline-block;letter-spacing:.3px;text-transform:uppercase;transition:background .2s}
 .btn-cta-primary:hover{background:var(--off-white)}
 .btn-cta-secondary{background:transparent;color:var(--white)!important;border:2px solid rgba(255,255,255,.55);padding:12px 24px;border-radius:4px;font-weight:700;font-size:13px;text-decoration:none!important;display:inline-block;letter-spacing:.3px;text-transform:uppercase;transition:all .2s}
