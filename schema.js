@@ -118,7 +118,8 @@
     '/homesafe':      'Homesafe™ Program',
     '/blog':          'Blog',
     '/team':          'Our Team',
-    '/contact':       'Contact'
+    '/contact':       'Contact',
+    '/history': 'Neighbourhood History'
   };
 
   if (PAGES[path]) {
