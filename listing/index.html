@@ -86,6 +86,13 @@
 .ld-contact-link{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-size:13px;font-weight:600}
 .ld-contact-link:hover{color:var(--red)}
 .ld-mls-note{font-size:10px;color:var(--muted);line-height:1.6;margin-top:16px;padding-top:14px;border-top:1px solid var(--border)}
+
+/* Homesafe callout in sidebar */
+.ld-homesafe-callout{background:var(--off-white);border-radius:var(--r);padding:18px;margin-top:16px;border:1.5px solid var(--border)}
+.ld-homesafe-title{font-size:11px;font-weight:800;color:var(--charcoal);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
+.ld-homesafe-desc{font-size:12px;color:var(--muted);line-height:1.65;margin:0 0 10px}
+.ld-homesafe-link{font-size:12px;font-weight:800;color:var(--red);text-decoration:none}
+.ld-homesafe-link:hover{text-decoration:underline}
 </style>
 <script src="/schema.js" defer></script>
 </head>
@@ -284,6 +291,7 @@ function toggleMenu() {
                 '<a href="tel:12508616002" class="ld-contact-link"><span>📞</span><span>250-861-6002</span></a>' +
                 '<a href="mailto:info@markjontz.com" class="ld-contact-link"><span>✉️</span><span>info@markjontz.com</span></a>' +
               '</div>' +
+              '<div class="ld-homesafe-callout">' +'<div class="ld-homesafe-title">Need to sell first?</div>' +'<p class="ld-homesafe-desc">Homesafe lets you buy your next home before your current one sells — one move, same day close.</p>' +'<a href="/homesafe" class="ld-homesafe-link">Learn about Homesafe →</a>' +'</div>' +
               '<div class="ld-mls-note">' +
                 (l.ListOfficeName ? 'Listing courtesy of ' + esc(l.ListOfficeName) + '. ' : '') +
                 'MLS® data provided by CREA DDF®. The trademarks REALTOR®, MLS®, and REALTORS® are controlled by CREA.' +
