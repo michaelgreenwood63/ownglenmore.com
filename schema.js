@@ -115,7 +115,7 @@
     '/old-glenmore':  'Glenmore',
     '/north-glenmore': 'North Glenmore',
     '/amenities':     'Amenities & Schools',
-    '/homesafe':      'Homesafe™ Program',
+    '/homesafe':      'Homesafe Program',
     '/blog':          'Blog',
     '/team':          'Our Team',
     '/contact':       'Contact',
