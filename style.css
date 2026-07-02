@@ -472,3 +472,13 @@ details[open] .faq-q::after{transform:translateY(-50%) rotate(45deg)}
 .text-charcoal{color:var(--charcoal)}
 .text-muted{color:var(--muted)}
 .mt-0{margin-top:0}
+
+/* ── ARTICLE SELLER STRIP ── */
+.article-seller-strip{background:var(--charcoal);border-radius:var(--r);padding:22px 28px;margin-top:16px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.article-seller-strip-text{font-size:15px;font-weight:800;color:var(--white);line-height:1.4}
+.article-seller-strip-sub{font-size:12px;color:rgba(255,255,255,.45);margin-top:2px}
+.article-seller-strip-btn{background:var(--red);color:var(--white);text-decoration:none;padding:12px 22px;border-radius:4px;font-size:13px;font-weight:800;white-space:nowrap;text-transform:uppercase;letter-spacing:.3px;flex-shrink:0}
+@media(max-width:540px){.article-seller-strip{flex-direction:column;text-align:center}.article-seller-strip-btn{width:100%;text-align:center}}
+
+/* ── LISTING CARD MOBILE ── */
+@media(max-width:480px){.listings-grid-live{grid-template-columns:1fr}.listing-photo{height:200px}}
