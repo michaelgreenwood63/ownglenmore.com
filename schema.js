@@ -163,6 +163,12 @@
       description:   'Which streets and pockets in Glenmore Kelowna offer the best long-term value? Local insight from Mark Jontz & Associates.',
       datePublished: '2026-06-23T00:00:00Z',
       dateModified:  '2026-06-27T00:00:00Z'
+    },
+    '/blog/glenmore-infrastructure-pipeline-2026': {
+      headline:      "Glenmore's Infrastructure Pipeline: What's Coming, and When",
+      description:   'A $251M rec centre rebuild, a new Highway 97 connection, and 4,000 acres in the growth study. Glenmore\'s infrastructure pipeline and its timing.',
+      datePublished: '2026-08-05T00:00:00Z',
+      dateModified:  '2026-08-05T00:00:00Z'
     }
   };
 
