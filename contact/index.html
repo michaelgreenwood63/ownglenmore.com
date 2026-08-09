@@ -87,7 +87,9 @@
 
       <div id="form">
         <div class="section-label" style="margin-bottom:16px">Send a Message</div>
+        <div class="lead-success" id="contact-success-msg" style="margin-bottom:16px">✓ Message sent — we'll be in touch within one business day.</div>
         <form action="https://formspree.io/f/xdarzzal" method="POST" style="background:var(--off-white);border:1.5px solid var(--border);border-radius:var(--r);padding:28px">
+          <input type="hidden" name="_next" value="https://ownglenmore.com/contact?sent=1">
           <input type="hidden" name="_subject" value="Contact Form — OwnGlenmore">
           <div class="form-group" style="margin-bottom:14px">
             <label style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:6px">Name</label>
@@ -171,6 +173,10 @@
 function toggleMenu() {
   var m = document.getElementById('mobile-menu');
   m.style.display = m.style.display === 'flex' ? 'none' : 'flex';
+}
+if (location.search.indexOf('sent=1') !== -1) {
+  var m2 = document.getElementById('contact-success-msg');
+  if (m2) { m2.style.display = 'block'; m2.scrollIntoView({behavior:'smooth', block:'center'}); }
 }
 </script>
 </body>
