@@ -282,7 +282,9 @@ function toggleMenu() {
                 '<div class="ld-agent-avatar">MJ</div>' +
                 '<div><div class="ld-agent-name">Mark Jontz</div><div class="ld-agent-title">REALTOR® · Royal LePage Kelowna</div></div>' +
               '</div>' +
+              '<div class="ld-form-success" id="ld-form-success" style="display:none;margin-bottom:12px;padding:12px;background:rgba(26,122,74,.12);border:1px solid rgba(26,122,74,.3);border-radius:6px;color:#1a7a4a;font-weight:700;font-size:13px;text-align:center">\u2713 Sent \u2014 we\'ll be in touch shortly.</div>' +
               '<form class="ld-contact-form" action="https://formspree.io/f/xdarzzal" method="POST">' +
+              '<input type="hidden" name="_next" value="https://ownglenmore.com/listing?id=' + encodeURIComponent(key) + '&sent=1">' +
                 '<input type="hidden" name="_subject" value="Listing Inquiry — ' + esc(addr.trim()) + '">' +
                 '<input type="hidden" name="listing" value="' + esc(addr.trim()) + ' · MLS® ' + esc(l.ListingId||'') + '">' +
                 '<div class="form-group"><label>Name</label><input type="text" name="name" placeholder="Your name" required></div>' +
@@ -308,6 +310,10 @@ function toggleMenu() {
 
     window._ldPhotos = photos;
     window._ldIdx    = 0;
+    if (location.search.indexOf('sent=1') !== -1) {
+      var successEl = document.getElementById('ld-form-success');
+      if (successEl) { successEl.style.display = 'block'; successEl.scrollIntoView({behavior:'smooth', block:'center'}); }
+    }
   }
 
   function chip(icon, val, lbl) {
