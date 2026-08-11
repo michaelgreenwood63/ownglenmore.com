@@ -142,6 +142,52 @@
     renderPagination(totalPages, total);
   }
 
+  /* ── featured listings (Mark Jontz's own current listings) ── */
+
+  var FEATURED_AGENT_NAME = 'Mark Jontz';
+
+  function renderFeaturedListings() {
+    var section   = document.getElementById('featured-listings');
+    var container = document.getElementById('featured-listings-container');
+    if (!section || !container) return;
+
+    var featured = _allListings.filter(function (l) {
+      return (l.ListAgentFullName || '').toLowerCase() === FEATURED_AGENT_NAME.toLowerCase();
+    });
+
+    var seen = {};
+    featured = featured.filter(function (l) {
+      var key = l.ListingKey || l.ListingId;
+      if (!key || seen[key]) return false;
+      seen[key] = true;
+      return true;
+    });
+
+    featured.sort(function (a, b) {
+      return new Date(b.OriginalEntryTimestamp || 0) - new Date(a.OriginalEntryTimestamp || 0);
+    });
+    var seenAddr = {};
+    featured = featured.filter(function (l) {
+      var addrKey = [l.StreetNumber, l.StreetName, l.StreetSuffix, l.UnitNumber].join('|').toLowerCase();
+      if (seenAddr[addrKey]) return false;
+      seenAddr[addrKey] = true;
+      return true;
+    });
+
+    if (!featured.length) {
+      section.style.display = 'none';
+      return;
+    }
+
+    section.style.display = '';
+    container.innerHTML = featured.map(renderCard).join('');
+    container.querySelectorAll('.listing-card[data-key]').forEach(function (card) {
+      card.addEventListener('click', function () {
+        window.location.href = '/listing?id=' + encodeURIComponent(card.getAttribute('data-key'));
+      });
+    });
+  }
+
   function renderPagination(totalPages, total) {
     var el = document.getElementById('listings-pagination');
     if (!el) return;
@@ -261,6 +307,7 @@
         }
 
         renderPage();
+        renderFeaturedListings();
 
         var disc = document.getElementById('listings-disclaimer');
         if (disc) {
