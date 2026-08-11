@@ -87,6 +87,7 @@ a.stat:hover .stat-lbl{color:rgba(255,255,255,.4)}
 
 /* ── BUILDING CARDS ── */
 .buildings-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.buildings-grid.collapsed .building-card-extra{display:none}
 .building-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s,box-shadow .2s;display:block}
 .building-card:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:0 8px 30px rgba(140,26,28,.1)}
 .building-card.rental{opacity:.65;cursor:default}
