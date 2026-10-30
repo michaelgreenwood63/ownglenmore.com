@@ -88,25 +88,26 @@
 
       <div id="form">
         <div class="section-label" style="margin-bottom:16px">Send a Message</div>
-        <div class="lead-success" id="contact-success-msg" style="margin-bottom:16px">✓ Message sent — we'll be in touch within one business day.</div>
-        <form action="https://formspree.io/f/xdarzzal" method="POST" style="background:var(--off-white);border:1.5px solid var(--border);border-radius:var(--r);padding:28px">
+        <div class="lead-success" id="contact-success-msg" style="margin-bottom:16px" data-fs-success>✓ Message sent — we'll be in touch within one business day.</div>
+          <div data-fs-error class="lead-form-error" style="margin-bottom:16px">Something went wrong. Please call <a href="tel:12508616002">250-861-6002</a>.</div>
+        <form action="https://formspree.io/f/xdarzzal" method="POST" id="contact-form" style="background:var(--off-white);border:1.5px solid var(--border);border-radius:var(--r);padding:28px">
           <input type="hidden" name="_next" value="https://ownglenmore.com/contact?sent=1">
           <input type="hidden" name="_subject" value="Contact Form — OwnGlenmore">
           <div class="form-group" style="margin-bottom:14px">
             <label style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:6px">Name</label>
-            <input type="text" name="name" placeholder="Your name" required style="width:100%;background:var(--white);border:1.5px solid var(--border);border-radius:6px;padding:11px 14px;font-size:14px;font-family:inherit;color:var(--text)">
+            <input type="text" name="name" placeholder="Your name" required style="width:100%;background:var(--white);border:1.5px solid var(--border);border-radius:6px;padding:11px 14px;font-size:14px;font-family:inherit;color:var(--text)" data-fs-field>
           </div>
           <div class="form-group" style="margin-bottom:14px">
             <label style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:6px">Email</label>
-            <input type="email" name="email" placeholder="you@email.com" required style="width:100%;background:var(--white);border:1.5px solid var(--border);border-radius:6px;padding:11px 14px;font-size:14px;font-family:inherit;color:var(--text)">
+            <input type="email" name="email" placeholder="you@email.com" required style="width:100%;background:var(--white);border:1.5px solid var(--border);border-radius:6px;padding:11px 14px;font-size:14px;font-family:inherit;color:var(--text)" data-fs-field>
           </div>
           <div class="form-group" style="margin-bottom:14px">
             <label style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:6px">Phone</label>
-            <input type="tel" name="phone" placeholder="250-555-0100" style="width:100%;background:var(--white);border:1.5px solid var(--border);border-radius:6px;padding:11px 14px;font-size:14px;font-family:inherit;color:var(--text)">
+            <input type="tel" name="phone" placeholder="250-555-0100" style="width:100%;background:var(--white);border:1.5px solid var(--border);border-radius:6px;padding:11px 14px;font-size:14px;font-family:inherit;color:var(--text)" data-fs-field>
           </div>
           <div class="form-group" style="margin-bottom:14px">
             <label style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:6px">I'm interested in</label>
-            <select name="interest" style="width:100%;background:var(--white);border:1.5px solid var(--border);border-radius:6px;padding:11px 14px;font-size:14px;font-family:inherit;color:var(--text)">
+            <select name="interest" style="width:100%;background:var(--white);border:1.5px solid var(--border);border-radius:6px;padding:11px 14px;font-size:14px;font-family:inherit;color:var(--text)" data-fs-field>
               <option>Buying in Glenmore</option>
               <option>Selling my home</option>
               <option>Free valuation</option>
@@ -117,9 +118,9 @@
           </div>
           <div class="form-group" style="margin-bottom:20px">
             <label style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:6px">Message</label>
-            <textarea name="message" placeholder="Tell us what you're looking for..." rows="4" style="width:100%;background:var(--white);border:1.5px solid var(--border);border-radius:6px;padding:11px 14px;font-size:14px;font-family:inherit;color:var(--text);resize:vertical"></textarea>
+            <textarea name="message" placeholder="Tell us what you're looking for..." rows="4" style="width:100%;background:var(--white);border:1.5px solid var(--border);border-radius:6px;padding:11px 14px;font-size:14px;font-family:inherit;color:var(--text);resize:vertical" data-fs-field></textarea>
           </div>
-          <button type="submit" style="width:100%;background:var(--red);color:var(--white);border:none;border-radius:6px;padding:13px;font-size:15px;font-weight:800;cursor:pointer;font-family:inherit;letter-spacing:.3px;text-transform:uppercase">Send Message →</button>
+          <button type="submit" style="width:100%;background:var(--red);color:var(--white);border:none;border-radius:6px;padding:13px;font-size:15px;font-weight:800;cursor:pointer;font-family:inherit;letter-spacing:.3px;text-transform:uppercase" data-fs-submit-btn>Send Message →</button>
         </form>
       </div>
     </div>
@@ -190,10 +191,9 @@ function toggleMenu() {
   var m = document.getElementById('mobile-menu');
   m.style.display = m.style.display === 'flex' ? 'none' : 'flex';
 }
-if (location.search.indexOf('sent=1') !== -1) {
-  var m2 = document.getElementById('contact-success-msg');
-  if (m2) { m2.style.display = 'block'; m2.scrollIntoView({behavior:'smooth', block:'center'}); }
-}
+window.formspree = window.formspree || function(){ (formspree.q = formspree.q || []).push(arguments); };
+formspree('initForm', { formElement: '#contact-form', formId: 'xdarzzal' });
 </script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
