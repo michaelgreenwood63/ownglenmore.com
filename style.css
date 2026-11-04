@@ -96,6 +96,12 @@ a.stat:hover .stat-lbl{color:rgba(255,255,255,.4)}
 .building-card:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:0 8px 30px rgba(143,122,61,.15)}
 .building-card.rental{opacity:.65;cursor:default}
 .building-card.rental:hover{border-color:var(--border);transform:none;box-shadow:none}
+.building-card-soon{border-style:dashed;background:var(--light);display:flex;align-items:center;justify-content:center;text-align:center;padding:28px 24px}
+.building-card-soon:hover{border-color:var(--red);transform:none;box-shadow:none}
+.card-soon-icon{width:34px;height:34px;border-radius:50%;border:1.5px dashed var(--red);color:var(--red);font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+.card-soon-desc{font-size:13px;color:var(--muted);line-height:1.6;margin:8px 0 16px}
+.card-soon-link{display:inline-block;font-size:12px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.5px;text-decoration:none}
+.card-soon-link:hover{text-decoration:underline}
 .card-img{height:140px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:14px}
 .card-img-condo{background:linear-gradient(145deg,#2C3E50 0%,#3D5166 60%,#2C3E50 100%)}
 .card-img-townhome{background:linear-gradient(145deg,#2D4A2D 0%,#3D6B3D 60%,#2D4A2D 100%)}
