@@ -284,6 +284,41 @@
         <div class="card-specs"><div class="card-spec"><strong>4</strong>Storeys</div><div class="card-spec"><strong>277</strong>Units</div></div>
         <div class="card-arrow">View Building <span>→</span></div>
       </a>
+      <a href="/glen-valley" class="building-card building-card-extra">
+        <span class="card-badge badge-strata">Strata · Townhome</span>
+        <div class="card-name">Glen Valley</div>
+        <div class="card-address">600 Boynton Place</div>
+        <div class="card-specs"><div class="card-spec"><strong>2012</strong>Built</div><div class="card-spec"><strong>3bd+</strong>Layout</div></div>
+        <div class="card-arrow">View Building <span>→</span></div>
+      </a>
+      <a href="/elios" class="building-card building-card-extra">
+        <span class="card-badge badge-strata">Strata · Townhome</span>
+        <div class="card-name">Elios</div>
+        <div class="card-address">218 Glen Park Drive</div>
+        <div class="card-specs"><div class="card-spec"><strong>2bd+</strong>Layout</div><div class="card-spec"><strong>Walk</strong>To Amenities</div></div>
+        <div class="card-arrow">View Building <span>→</span></div>
+      </a>
+      <a href="/parkside-manor" class="building-card building-card-extra">
+        <span class="card-badge badge-strata">Strata · Condo</span>
+        <div class="card-name">Parkside Manor</div>
+        <div class="card-address">1660 Ufton Court</div>
+        <div class="card-specs"><div class="card-spec"><strong>2–3bd</strong>Layout</div><div class="card-spec"><strong>Near</strong>Rec Centre</div></div>
+        <div class="card-arrow">View Building <span>→</span></div>
+      </a>
+      <a href="/tudor-manor" class="building-card building-card-extra">
+        <span class="card-badge badge-strata">Strata · Condo</span>
+        <div class="card-name">Tudor Manor</div>
+        <div class="card-address">1665 Ufton Court</div>
+        <div class="card-specs"><div class="card-spec"><strong>1bd+</strong>Layout</div><div class="card-spec"><strong>Strata</strong>Tenure</div></div>
+        <div class="card-arrow">View Building <span>→</span></div>
+      </a>
+      <a href="/1870-parkinson-way" class="building-card building-card-extra">
+        <span class="card-badge badge-strata">Strata · Townhome</span>
+        <div class="card-name">1870 Parkinson Way</div>
+        <div class="card-address">1870 Parkinson Way</div>
+        <div class="card-specs"><div class="card-spec"><strong>2bd</strong>Layout</div><div class="card-spec"><strong>Strata</strong>Tenure</div></div>
+        <div class="card-arrow">View Building <span>→</span></div>
+      </a>
       <div class="building-card building-card-soon">
         <div class="card-soon-inner">
           <div class="card-soon-icon">+</div>
@@ -294,7 +329,7 @@
       </div>
     </div>
     <div style="text-align:center;margin-top:28px">
-      <button type="button" class="btn-outline buildings-toggle-btn" id="buildings-toggle" onclick="toggleBuildings()">View All 15 Buildings →</button>
+      <button type="button" class="btn-outline buildings-toggle-btn" id="buildings-toggle" onclick="toggleBuildings()">View All 20 Buildings →</button>
     </div>
   </div>
 </div>
@@ -662,6 +697,11 @@
         <li><a href="/orchard-brook-village">Orchard Brook Village</a></li>
         <li><a href="/parklane-glenmore">Parklane</a></li>
         <li><a href="/eminence-knox-mountain">Eminence at Knox Mountain</a></li>
+        <li><a href="/glen-valley">Glen Valley</a></li>
+        <li><a href="/elios">Elios</a></li>
+        <li><a href="/parkside-manor">Parkside Manor</a></li>
+        <li><a href="/tudor-manor">Tudor Manor</a></li>
+        <li><a href="/1870-parkinson-way">1870 Parkinson Way</a></li>
       </ul>
     </div>
     <div>
@@ -700,7 +740,7 @@ function toggleBuildings() {
   var grid = document.getElementById('buildings-grid');
   var btn = document.getElementById('buildings-toggle');
   var nowCollapsed = grid.classList.toggle('collapsed');
-  btn.textContent = nowCollapsed ? 'View All 15 Buildings →' : 'Show Fewer ↑';
+  btn.textContent = nowCollapsed ? 'View All 20 Buildings →' : 'Show Fewer ↑';
 }
 window.formspree = window.formspree || function(){ (formspree.q = formspree.q || []).push(arguments); };
 formspree('initForm', { formElement: '#seller-form', formId: 'xdarzzal' });
